@@ -48,8 +48,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         buttonSignUpLogInActivity.setOnClickListener(this);
 
         if (ParseUser.getCurrentUser() != null) {
-           // ParseUser.getCurrentUser().logOut();
-            transitionToSocialMediaActivity();
+           ParseUser.getCurrentUser().logOut();
+
         }
 
     }
@@ -83,6 +83,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                         FancyToast.makeText(LoginActivity.this, user.getUsername() + " is logged up successfully!",
                                                 FancyToast.LENGTH_LONG, FancyToast.SUCCESS, false).show();
                                         transitionToSocialMediaActivity();
+
                                     } else {
                                         FancyToast.makeText(LoginActivity.this, e.getMessage(),
                                                 FancyToast.LENGTH_LONG, FancyToast.ERROR, false).show();
