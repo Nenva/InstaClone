@@ -11,6 +11,13 @@
     <string name="editSignUpPasswordHint">Password</string>
     <string name="buttonCreateAccountName">Create Account</string>
     <string name="textLogInName">You already have an account? Log in here!</string>
+    <string name="editNameProfile">Name</string>
+    <string name="editBioProfile">Bio</string>
+    <string name="editProfProfile">Profession</string>
+    <string name="editHobbiesProfile">Hobbies</string>
+    <string name="editSportProfile">Sports</string>
+    <string name="buttonUpdateProfile">Update</string>
+
 
 
 </resources>

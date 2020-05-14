@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <corners
-        android:radius="10dp" />
+        android:radius="20dp" />
 
     <padding
         android:left="10dp"
@@ -11,6 +11,6 @@
         android:top="10dp"
         android:bottom="10dp"/>
 
-    <solid android:color="@color/colorSecondary"/>
+    <solid android:color="@color/colorPrimary"/>
 
 </shape>
