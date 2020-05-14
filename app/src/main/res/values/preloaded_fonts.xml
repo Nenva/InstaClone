@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/bangers</item>
+        <item>@font/lato_italic</item>
+        <item>@font/lemonada_light</item>
+        <item>@font/nunito_sans</item>
+        <item>@font/nunito_sans_extralight</item>
+    </array>
+</resources>

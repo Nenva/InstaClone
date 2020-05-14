@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.parse.LogInCallback;
 import com.parse.ParseException;
@@ -19,7 +20,8 @@ import com.shashank.sony.fancytoastlib.FancyToast;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editLoginEmail, editLoginPassword;
-    private Button buttonLogInActivity, buttonSignUpLogInActivity;
+    private Button buttonLogInActivity;
+    private TextView textCreateAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,10 +44,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
 
         buttonLogInActivity = findViewById(R.id.buttonLogInActivity);
-        buttonSignUpLogInActivity = findViewById(R.id.buttonSignUpLoginActivity);
-
         buttonLogInActivity.setOnClickListener(this);
-        buttonSignUpLogInActivity.setOnClickListener(this);
+
+        textCreateAccount = findViewById(R.id.textCreateAccount);
+        textCreateAccount.setOnClickListener(this);
+
 
         if (ParseUser.getCurrentUser() != null) {
            ParseUser.getCurrentUser().logOut();
@@ -94,7 +97,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
                 break;
 
-            case R.id.buttonSignUpLoginActivity:
+            case R.id.textCreateAccount:
                 Intent intent = new Intent(LoginActivity.this, SignUp.class);
                 startActivity(intent);
                 break;

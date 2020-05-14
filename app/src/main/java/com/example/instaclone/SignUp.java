@@ -29,7 +29,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     //UI Components
     private EditText editEmailSignUp, editUsernameSignUp, editPasswordSignUp;
-    private Button buttonSignUp, buttonLogIn;
+    private Button buttonSignUp;
+    private TextView textLogIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,10 +54,10 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         });
 
         buttonSignUp = findViewById(R.id.buttonSignUpActivity);
-        buttonLogIn = findViewById(R.id.buttonLogInSignUpActivity);
-
         buttonSignUp.setOnClickListener(this);
-        buttonLogIn.setOnClickListener(this);
+
+        textLogIn = findViewById(R.id.textLogIn);
+        textLogIn.setOnClickListener(this);
 
         if (ParseUser.getCurrentUser() != null) {
             //ParseUser.getCurrentUser().logOut();
@@ -103,7 +104,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                 }
                 break;
 
-            case R.id.buttonLogInSignUpActivity:
+            case R.id.textLogIn:
                 Intent intent = new Intent(SignUp.this, LoginActivity.class);
                 startActivity(intent);
                 break;
