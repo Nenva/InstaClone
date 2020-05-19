@@ -1,5 +1,6 @@
 package com.example.instaclone;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -83,15 +84,32 @@ public class ProfileTab extends Fragment {
                         if (e == null) {
                             FancyToast.makeText(getContext(), "Info Updated!",
                                     FancyToast.LENGTH_SHORT, FancyToast.INFO, false).show();
+                            transitionToUserProfileActivity();
                         } else {
                             FancyToast.makeText(getContext(), e.getMessage(),
                                     FancyToast.LENGTH_SHORT, FancyToast.ERROR,false).show();
                         }
                     }
                 });
+
             }
         });
 
         return view;
+    }
+
+    private void transitionToUserProfileActivity() {
+        Intent intent = new Intent(getActivity(), UserProfile.class);
+        String name = editProfileName.getText().toString();
+        String bio = editProfileBio.getText().toString();
+        String profession = editProfileProfession.getText().toString();
+        String hobbies = editProfileHobbies.getText().toString();
+        String sports = editProfileSports.getText().toString();
+
+        intent.putExtra("Bio", bio);
+        intent.putExtra("Profession", profession);
+        intent.putExtra("Hobbies", hobbies);
+        intent.putExtra("Sports", sports);
+        startActivity(intent);
     }
 }

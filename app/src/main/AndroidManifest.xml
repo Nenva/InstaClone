@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".UserProfile"/>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +24,7 @@
         <activity android:name=".UsersPosts" />
         <activity android:name=".SocialMediaActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SignUp"></activity>
+        <activity android:name=".SignUp" />
 
         <meta-data
             android:name="preloaded_fonts"
