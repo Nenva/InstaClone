@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
-    android:background="@color/colorAccent">
+    android:background="@color/pdlg_color_white">
 
     <ImageView
         android:id="@+id/imageLogo"
@@ -14,7 +14,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/instaclone_logo"
+        android:src="@drawable/instaclone_logo_v2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,10 +24,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
-        android:fontFamily="@font/bangers"
+        android:fontFamily="@font/nunito_sans"
         android:text="InstaClone"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_purple"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="70sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -39,8 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
-        android:fontFamily="@font/lato_italic"
-        android:text="Catch Your Moment!"
+        android:fontFamily="@font/nunito_sans_extralight"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Catch your moment!"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

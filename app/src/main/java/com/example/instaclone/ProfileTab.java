@@ -1,6 +1,8 @@
 package com.example.instaclone;
 
+import android.Manifest;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,11 +12,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 import com.shashank.sony.fancytoastlib.FancyToast;
+
+import java.awt.font.TextAttribute;
 
 public class ProfileTab extends Fragment {
 
@@ -36,6 +42,7 @@ public class ProfileTab extends Fragment {
         editProfileHobbies = view.findViewById(R.id.editProfileHobbies);
         editProfileSports = view.findViewById(R.id.editProfileSports);
         buttonUpdateInfo = view.findViewById(R.id.buttonUpdateInfo);
+
 
         final ParseUser parseUser = ParseUser.getCurrentUser();
 

@@ -15,96 +15,95 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="15dp"
         android:autofillHints=""
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:fontFamily="@font/nunito_sans"
-        android:hint="@string/editNameProfile"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textNameProfileTab" />
 
     <EditText
         android:id="@+id/editProfileBio"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="15dp"
         android:autofillHints=""
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:fontFamily="@font/nunito_sans"
-        android:hint="@string/editBioProfile"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfileName" />
+        app:layout_constraintTop_toBottomOf="@+id/textBioProfileTab" />
 
     <EditText
         android:id="@+id/editProfileProfession"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="15dp"
         android:autofillHints=""
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:fontFamily="@font/nunito_sans"
-        android:hint="@string/editProfProfile"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfileBio" />
+        app:layout_constraintTop_toBottomOf="@+id/textProfessionProfileTab" />
 
     <EditText
         android:id="@+id/editProfileHobbies"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="15dp"
         android:autofillHints=""
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:fontFamily="@font/nunito_sans"
-        android:hint="@string/editHobbiesProfile"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfileProfession" />
+        app:layout_constraintTop_toBottomOf="@+id/textHobbiesProfileTab" />
 
     <EditText
         android:id="@+id/editProfileSports"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="15dp"
         android:autofillHints=""
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:fontFamily="@font/nunito_sans"
-        android:hint="@string/editSportProfile"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfileHobbies" />
+        app:layout_constraintTop_toBottomOf="@+id/textSportsProfileTab" />
 
     <Button
         android:id="@+id/buttonUpdateInfo"
@@ -122,4 +121,75 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editProfileSports" />
+
+    <TextView
+        android:id="@+id/textNameProfileTab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBioProfileTab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="Biography"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileName" />
+
+    <TextView
+        android:id="@+id/textProfessionProfileTab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="Profession"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileBio" />
+
+    <TextView
+        android:id="@+id/textHobbiesProfileTab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="Hobbies"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileProfession" />
+
+    <TextView
+        android:id="@+id/textSportsProfileTab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="Sports"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileHobbies" />
 </androidx.constraintlayout.widget.ConstraintLayout>

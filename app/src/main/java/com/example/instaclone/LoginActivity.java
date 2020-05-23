@@ -84,12 +84,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 public void done(ParseUser user, ParseException e) {
                                     if (user != null && e == null) {
                                         FancyToast.makeText(LoginActivity.this, user.getUsername() + " is logged up successfully!",
-                                                FancyToast.LENGTH_LONG, FancyToast.SUCCESS, false).show();
+                                                FancyToast.LENGTH_SHORT, FancyToast.SUCCESS, false).show();
                                         transitionToSocialMediaActivity();
 
                                     } else {
                                         FancyToast.makeText(LoginActivity.this, e.getMessage(),
-                                                FancyToast.LENGTH_LONG, FancyToast.ERROR, false).show();
+                                                FancyToast.LENGTH_SHORT, FancyToast.ERROR, false).show();
                                     }
                                     progressDialog.dismiss();
                                 }

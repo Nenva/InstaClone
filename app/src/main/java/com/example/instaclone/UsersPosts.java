@@ -91,7 +91,7 @@ public class UsersPosts extends AppCompatActivity {
                     }
                 } else {
                     FancyToast.makeText(UsersPosts.this, receivedUserName + " doesn't have any post!",
-                            Toast.LENGTH_LONG, FancyToast.INFO, false).show();
+                            Toast.LENGTH_SHORT, FancyToast.INFO, false).show();
                     finish();
                 }
                 dialog.dismiss();
